@@ -1,0 +1,21 @@
+{
+  "name": "gabotrons.github.io",
+  "version": "0.0.0",
+  "homepage": "http://gabotrons.github.io/",
+  "authors": [
+    "Gabriel Moreno <inggml@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.0",
+    "bootstrap-css": "~3.3.4",
+    "fontawesome": "~4.3.0"
+  }
+}

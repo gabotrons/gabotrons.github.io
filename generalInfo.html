@@ -1,0 +1,22 @@
+<div class="col-md-12 well">
+	<img src="images/gml_profile.jpg" alt="" class="center-block img-circle cvprofile">
+	<p class="text-center">{{ fullName() }}</p>
+	<p class="text-center text-muted">{{ position }}</p>
+	<p class="text-center text-success">{{ liveIn }}</p>
+	<blockquote>
+		<p>Studying Angular and React.</p>
+		<small>by <cite>GML</cite></small>
+	</blockquote>
+	<p><i class="fa fa-envelope-o fa-fw"></i><span class="text-uppercase">Contact</span></p>
+	<p>
+		<a href="mailto:{{ email }}">{{ email }}</a>
+	</p>
+	<p>{{ telNumber }}</p>
+	<p><i class="fa fa-globe fa-fw"></i><span class="text-uppercase">Connect</span></p>
+	<p>
+		<a href="https://mx.linkedin.com/in/gabrielml">LinkedIn</a>
+	</p>
+</div>
+
+<div class="col-md-12 well" ng-include="'skills.html'">
+</div>

@@ -1,0 +1,34 @@
+{
+    "objective": "Continue learning new technologies and contribute with my knowledge and experience in projects assigned to build applications with great visual impact and functionality caring the functionality and performance",
+    "experience": [
+        {
+            "from": 1420390800000,
+            "to":   1430467200000,
+            "company": "Liino México",
+            "rol": "Team Leader",
+            "activities":[
+                "Organization of a development team with seven developers (4 backs and 3 fronts)",
+                "Responsible for the proper functioning of the list of products and product detail in the website",
+                "Monitoring the development of the team",
+                "Feedback to the developers about code improvements ",
+                "Change of ideas to make new functionalities in the website",
+                "Report of the activities with the Product Manager",
+                "Code review before the integration with the master branch ",
+                "Provide the necessary resources to the developers that they can make her activities",
+                "Responsible to make the Daily Scrum with the developers team",
+                "Planification and execution of the sprint",
+                "Analysis and  assignation of the different tickets in the sprint",
+                "Support to the UI/UX area",
+                "Analysis and fixed some issues in live",
+                "Installation of test environments"
+            ]
+
+        },
+        {
+          "from": 1238572800000,
+          "to":   1385884800000,
+          "company": "National Institute of Public Health",
+          "rol": "Visual Web Design Developer"
+        }
+    ]
+}

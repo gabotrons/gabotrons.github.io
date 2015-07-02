@@ -5,18 +5,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Personal CV</title>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="bower_components/bootstrap-css/css/bootstrap.min.css">
-	<link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.min.css">
-	<script src="bower_components/angular/angular.min.js"></script>
-	<script src="js/appCV.js"></script>
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="assets/css/min/compiled.min.css">
+	<script src="assets/js/min/compiled.min.js"></script>
 </head>
 <body>
-	<div class="container" ng-app="myApp" ng-controller="myCtrl">
+	<div class="container" ng-app="myApp" ng-controller="MainController">
 		<div class="row">
-			<div class="col-md-3" ng-include="'generalInfo.html'">
-			</div>
-
+		    <general-info></general-info>
 			<div class="col-md-9 well" ng-include="'summary.html'">
 			</div>
 		</div>

@@ -1,28 +1,19 @@
 <h3>Background</h3>
 <hr class="featurette-divider">
+<p><span class="text-uppercase">Objective</span></p>
+<p>{{ backgroundInfo.objective }}</p>
 <p>
 	<i class="fa fa-briefcase fa-fw"></i><span class="text-uppercase">Experience</span>
 </p>
-<div>
-	<small class="text-muted">January 2014 - May 2015</small>
-	<p class="text-success">Linio México</p>
-	<p>Team Leader</p>
-	<ul>
-		<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur nemo, reprehenderit id earum inventore modi magni.</li>
-		<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et</li>
-		<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore dolores dignissimos ea nam numquam incidunt quia exli</li>
-	</ul>
-</div>
-
-<div>
-	<small class="text-muted">April 2009 - December 2013</small>
-	<p class="text-success">National Institute of Public Health</p>
-	<p>Team Leader</p>
-	<ul>
-		<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur nemo, reprehenderit id earum inventore modi magni.</li>
-		<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et</li>
-		<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore dolores dignissimos ea nam numquam incidunt quia exli</li>
-	</ul>
+<div ng-repeat="work in backgroundInfo.experience">
+	<div>
+		<small class="text-muted">{{ work.from | date:'MMMM yyyy' }} - {{ work.to | date:'MMMM yyyy' }}</small>
+		<p class="text-success">{{ work.company }}</p>
+		<p>Team Leader</p>
+		<ul ng-repeat=" tasks in work.activities">
+			<li>{{ tasks }}</li>
+		</ul>
+	</div>
 </div>
 
 <p>

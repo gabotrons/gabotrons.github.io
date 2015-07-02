@@ -1,3 +1,5 @@
-<h3>Skills</h3>
-<hr class="featurette-divider">
-<span ng-repeat="listSkills in skills | orderBy:'skill'"><span class="label label-default">{{ listSkills.skill }}</span> </span>
+<div class="col-md-12 well">
+	<h3>{{ skills.titulo }}</h3>
+	<hr class="featurette-divider">
+	<span ng-repeat="listSkills in skills | orderBy:'skill'"><span class="label label-default">{{ listSkills.skill }}</span> </span>
+</div>

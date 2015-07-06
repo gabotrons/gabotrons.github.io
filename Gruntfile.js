@@ -4,20 +4,6 @@ module.exports = function (grunt) {
 		globalConfig : {
 			src: 'assets/',
 			destCss: 'assets/css/'
-		},		
-		stylus: {
-			compile: {
-				files: {
-				  'assets/css/estilos.css': 'assets/css/estilos.styl', // 1:1 compile
-			  	}
-			}
-		},
-		uncss: {
-			dist: {
-				files: [
-					{ src: 'index.html', dest: 'cleancss/tidy.css' }
-				]
-			}
 		},
 		cssmin: {
 			dist: {
@@ -37,13 +23,6 @@ module.exports = function (grunt) {
 				}
 			}
 		},
-		processhtml: {
-			dist: {
-				files: {
-						'index.html': ['index.html']
-					}
-			}
-		},
 		copy: {
 			fonts: {
 				cwd: '<%= globalConfig.src  %>',
@@ -58,10 +37,7 @@ module.exports = function (grunt) {
 
 	// Load the plugins
 	grunt.loadNpmTasks('grunt-contrib-watch');
-	grunt.loadNpmTasks('grunt-contrib-stylus');
-	grunt.loadNpmTasks('grunt-uncss');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
-	grunt.loadNpmTasks('grunt-processhtml');
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
 	grunt.loadNpmTasks('grunt-contrib-copy');
 

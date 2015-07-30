@@ -1,0 +1,187 @@
+@import 'configs'
+@import 'fonts'
+@import 'icons'
+
+body
+  background lighten(gray,90%)
+  color gray
+  font-family Arial,Helvetica,sans-serif
+  line-height 1.2em
+  margin 0
+  padding 0
+
+h1
+	font-weight normal
+	margin 0
+a
+	color darken(primary_color,50%)
+	
+header
+	background primary_color
+	border-top 10px solid darken(primary_color,20%) 
+	color white
+
+.sectionwidth
+	max-width default_width
+	padding 10px
+
+input[type="text"]
+	background lighten(gray,80%)
+	border none
+	padding 10px
+
+button
+input[type="submit"]
+.btn
+	background primary_color
+	border none
+	color white
+	cursor pointer
+	margin 10px 0
+	min-width 200px
+	padding 10px
+	font-size 0.9em
+	text-align center
+	position relative
+	&:hover
+		background darken(primary_color,50%)
+		transition background 0.3s linear 	
+		-webkit-transition background 0.3s linear
+	 	-o-transition background 0.3s linear
+	&:before
+		border 1px lighten(primary_color, 40%) solid
+		position absolute
+		content ""
+		width 97%
+		top 2px
+		left 2px
+		height 85%
+	
+.center
+	margin 0 auto
+
+.authors
+	font-size 0.8em
+	a
+		margin 0 2px
+
+
+.slidermost
+.searches	
+	display block
+	margin 0
+	padding 0
+	.slidermost__item
+		background lighten(gray,80%)
+		display inline-block
+		padding 5px
+		vertical-align top
+		width 200px
+		margin 0 10px
+		font-size 0.9em
+		max-height 150px
+
+.columns
+	float left
+
+.leftcolumn
+	width 80%
+	margin-right 10px
+	
+.rightcolumn
+	width calc(20% - 10px)
+	
+article
+	border-left 3px solid lighten(gray,80%)
+	padding 10px
+	margin 20px 0
+	position relative
+	
+.bckimage
+	background url(../../images/find-books.jpg)
+	background-size cover
+	background-position 0 -600px
+	text-align center
+
+.searches__item
+	background lighten(gray, 80%)
+	display inline-block
+	padding 5px
+	margin 5px
+	cursor pointer
+	font-size 0.9em
+	&:hover
+		background gray
+		color white
+		transition all 0.3s linear 	
+		-webkit-transition all 0.3s linear
+	 	-o-transition all 0.3s linear
+
+.hide
+	display none
+	
+#searchText
+	margin 30px 0
+	min-width 400px
+	background rgba(255,255,255,0.8)
+	color gray
+
+.glyphicon
+	-moz-osx-font-smoothing grayscale
+	-webkit-font-smoothing antialiased
+	display inline-block
+	font-family 'Glyphicons Halflings'
+	font-style normal
+	font-weight normal
+	line-height 1;
+	position relative
+	top 1px
+
+.mgtop10
+	margin-top 10px
+
+.mgbottom20
+	margin-bottom 20px
+
+.fixedheader
+	position fixed
+	width 100%
+	z-index 2
+
+.main
+	padding-top 165px
+	overflow hidden
+	position relative
+
+.social
+	display inline-block
+	position absolute
+	top 0
+	right 30px
+	span
+		display inline
+		color primary_color
+		margin 0 10px
+		cursor pointer
+		&:hover
+			color darken(primary_color,50%)
+
+.btns
+	background primary_color
+	color white
+	padding 3px
+	cursor pointer
+	font-size 0.8em
+	vertical-align middle
+
+.title--showhide
+	position relative
+
+.rights
+	text-align center
+	font-size 0.8em
+	border-top 1px solid lighten(gray,80%)
+
+.rss
+	float right
+	color primary_color

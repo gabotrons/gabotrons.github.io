@@ -1,0 +1,16 @@
+{
+	"data" : [
+		{
+			"title" : "Article 1",
+			"authors": { "author" : ["author1", "author2"]},
+			"description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus nam cum veniam neque aut nihil quis reiciendis. Omnis excepturi ex nesciunt, vel, ducimus harum id at rem, nisi blanditiis quae?",
+			"pags" : "12-20"
+		},
+		{
+			"title" : "Article 2",
+			"authors": { "author" : ["author3", "author4"]},
+			"description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus nam cum veniam neque aut nihil quis reiciendis. Omnis excepturi ex nesciunt, vel, ducimus harum id at rem, nisi blanditiis quae?",
+			"pags" : "12-20"
+		}
+	]
+}

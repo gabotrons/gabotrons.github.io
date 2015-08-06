@@ -20,6 +20,9 @@ header
 	background primary_color
 	border-top 10px solid darken(primary_color,20%) 
 	color white
+	a
+		color white
+		text-decoration none
 
 .sectionwidth
 	max-width default_width
@@ -38,16 +41,18 @@ input[type="submit"]
 	color white
 	cursor pointer
 	margin 10px 0
-	min-width 200px
 	padding 10px
 	font-size 0.9em
 	text-align center
 	position relative
+	text-decoration none
+	display inline-block
+	min-width 200px
 	&:hover
 		background darken(primary_color,50%)
-		transition background 0.3s linear 	
 		-webkit-transition background 0.3s linear
-	 	-o-transition background 0.3s linear
+		-o-transition background 0.3s linear
+		transition background 0.3s linear
 	&:before
 		border 1px lighten(primary_color, 40%) solid
 		position absolute
@@ -71,15 +76,37 @@ input[type="submit"]
 	display block
 	margin 0
 	padding 0
+	overflow hidden
 	.slidermost__item
 		background lighten(gray,80%)
-		display inline-block
+		opacity 0.6
+		list-style none
 		padding 5px
-		vertical-align top
-		width 200px
 		margin 0 10px
 		font-size 0.9em
 		max-height 150px
+		position relative
+		box-sizing border-box 
+		overflow hidden
+		p
+			margin 0
+			position relative
+			top 0
+		&:hover
+			opacity 1
+			-webkit-transition opacity 0.2s linear
+			-o-transition opacity 0.2s linear
+			transition opacity 0.2s linear
+			.consult
+				bottom 0
+				-webkit-transition bottom 0.2s linear
+				-o-transition bottom 0.2s linear
+				transition bottom 0.2s linear
+			p
+				-webkit-transition all 0.2s linear
+				-o-transition all 0.2s linear
+				transition all 0.2s linear
+				top -22px
 
 .columns
 	float left
@@ -105,17 +132,18 @@ article
 
 .searches__item
 	background lighten(gray, 80%)
-	display inline-block
+	float left
 	padding 5px
 	margin 5px
 	cursor pointer
 	font-size 0.9em
+	list-style none
 	&:hover
 		background gray
 		color white
-		transition all 0.3s linear 	
 		-webkit-transition all 0.3s linear
-	 	-o-transition all 0.3s linear
+		-o-transition all 0.3s linear
+		transition all 0.3s linear
 
 .hide
 	display none
@@ -147,11 +175,22 @@ article
 	position fixed
 	width 100%
 	z-index 2
+	&:after
+	&:before
+		box-shadow 0 0 30px rgba(255,255,255,1)
+		content ""
+		position absolute
+		width 100%
+		z-index -1
+		padding 20px
+		display block
+		bottom 0
 
 .main
 	padding-top 165px
 	overflow hidden
 	position relative
+	z-index 1
 
 .social
 	display inline-block
@@ -185,3 +224,25 @@ article
 .rss
 	float right
 	color primary_color
+
+.warning
+	border 1px solid red !important
+
+.prev
+.next
+	color lighten(gray,60%)
+	cursor pointer
+	padding 3px
+	margin-left 10px
+	&:hover
+		color gray
+.consult
+	background rgba(128, 175, 186, 0.88)
+	width 100%
+	padding 3px 
+	color white
+	text-decoration none
+	position absolute
+	bottom -25px
+	left 0
+	

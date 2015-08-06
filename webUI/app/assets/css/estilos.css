@@ -343,7 +343,9 @@ article {
   -o-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
-.hide,
+.hide {
+  display: none;
+}
 .twitter {
   display: none !important;
 }
